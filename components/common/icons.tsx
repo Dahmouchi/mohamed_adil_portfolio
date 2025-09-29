@@ -29,6 +29,14 @@ import {
   SunMedium,
   Trash,
   User,
+    Car,
+  Cpu,
+  Wrench,
+  Battery,
+  CircuitBoard,
+  ShieldCheck,
+  Activity,
+  Gauge,
   X,
   Zap,
 } from "lucide-react";
@@ -68,6 +76,15 @@ import {
 } from "react-icons/si";
 
 export const Icons = {
+  // New automotive/electronics icons
+  diagnostics: Gauge, // for automotive diagnostics
+  electronics: CircuitBoard, // for embedded electronics
+  maintenance: Wrench, // for vehicle maintenance
+  electricity: Battery, // for electrical systems
+  engine: Car, // can represent vehicle/engine systems
+  network: Cpu, // for CAN bus / ECU communication
+  mechanics: Activity, // for hydraulics/mechanics (movement)
+  safety: ShieldCheck, // for workshop safety
   contact: Phone,
   gitRepoIcon: BookMarked,
   gitOrgBuilding: Building,

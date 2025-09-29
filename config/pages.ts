@@ -8,68 +8,77 @@ type PagesConfig = {
       title: string;
       description: string;
     };
-    // featuredDescription: string;
+    // featuredDescription?: string;
   };
 };
 
 export const pagesConfig: PagesConfig = {
   home: {
     title: "Home",
-    description: "Welcome to my portfolio website.",
+    description:
+      "Welcome to my portfolio — I am a student in Automotive Diagnostics and Embedded Electronics at OFPPT, Morocco.",
     metadata: {
-      title: "Home",
-      description: "Naman Barkiya's portfolio website.",
+      title: "Home | Portfolio",
+      description:
+        "Portfolio of an Automotive Diagnostics and Embedded Electronics student at OFPPT, Morocco.",
     },
   },
   skills: {
     title: "Skills",
-    description: "Key skills that define my professional identity.",
+    description:
+      "Technical skills in automotive diagnostics, embedded systems, electronics, and vehicle maintenance.",
     metadata: {
-      title: "Skills",
+      title: "Skills | Portfolio",
       description:
-        "Naman Barkiya's key skills that define his professional identity.",
+        "Key skills in automotive diagnostics, electronics, and embedded systems.",
     },
   },
   projects: {
     title: "Projects",
-    description: "Showcasing impactful projects and technical achievements.",
+    description:
+      "Practical projects and workshops completed during my automotive diagnostics training.",
     metadata: {
-      title: "Projects",
-      description: "Naman Barkiya's projects in building web applications.",
+      title: "Projects | Portfolio",
+      description:
+        "Projects related to automotive diagnostics and embedded electronics from my OFPPT training.",
     },
   },
   contact: {
     title: "Contact",
-    description: "Let's connect and explore collaborations.",
+    description:
+      "Let’s connect — feel free to reach out for collaborations or opportunities.",
     metadata: {
-      title: "Contact",
-      description: "Contact Naman Barkiya.",
+      title: "Contact | Portfolio",
+      description: "Get in touch for collaboration or professional opportunities.",
     },
   },
   contributions: {
     title: "Contributions",
-    description: "Open-source contributions and community involvement.",
+    description:
+      "Community involvement, shared works, open-source resources, and automotive knowledge.",
     metadata: {
-      title: "Contributions",
+      title: "Contributions | Portfolio",
       description:
-        "Naman Barkiya's open-source contributions and community involvement.",
+        "My contributions and shared resources in automotive diagnostics and technology.",
     },
   },
   resume: {
     title: "Resume",
-    description: "Naman Barkiya's resume.",
+    description: "My academic background, technical training, and career profile.",
     metadata: {
-      title: "Resume",
-      description: "Naman Barkiya's resume.",
+      title: "Resume | Portfolio",
+      description:
+        "Detailed resume — education, skills, and professional experience in automotive diagnostics.",
     },
   },
   experience: {
     title: "Experience",
-    description: "Professional journey and career timeline.",
+    description:
+      "Internships, workshops, and practical training in automotive maintenance and diagnostics.",
     metadata: {
-      title: "Experience",
+      title: "Experience | Portfolio",
       description:
-        "Naman Barkiya's professional journey and experience timeline.",
+        "Hands-on experience in vehicle maintenance, diagnostics, and embedded systems at OFPPT.",
     },
   },
 };

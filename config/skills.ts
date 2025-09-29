@@ -9,152 +9,60 @@ export interface skillsInterface {
 
 export const skillsUnsorted: skillsInterface[] = [
   {
-    name: "Next.js",
+    name: "Automotive Diagnostics",
     description:
-      "Effortlessly build dynamic apps with routing, layouts, loading UI, and API routes.",
+      "Identify and analyze vehicle faults using diagnostic tools and modern testing techniques.",
     rating: 5,
-    icon: Icons.nextjs,
+    icon: Icons.diagnostics, // you’ll need to add an appropriate icon
   },
   {
-    name: "React",
+    name: "Embedded Electronics",
     description:
-      "Craft interactive user interfaces using components, state, props, and virtual DOM.",
+      "Understand and work with electronic control units (ECUs) and automotive embedded systems.",
     rating: 5,
-    icon: Icons.react,
+    icon: Icons.electronics,
   },
   {
-    name: "GraphQL",
+    name: "Vehicle Maintenance",
     description:
-      "Fetch data precisely with a powerful query language for APIs and runtime execution.",
+      "Perform preventive and corrective maintenance to ensure vehicle reliability and safety.",
     rating: 4,
-    icon: Icons.graphql,
+    icon: Icons.maintenance,
   },
   {
-    name: "Nest.js",
+    name: "Electrical Systems",
     description:
-      "Create scalable and modular applications with a progressive Node.js framework.",
+      "Diagnose and repair automotive electrical and electronic systems.",
     rating: 4,
-    icon: Icons.nestjs,
+    icon: Icons.electricity,
   },
   {
-    name: "express.js",
+    name: "Engine Systems",
     description:
-      "Build web applications and APIs quickly using a fast, unopinionated Node.js framework.",
-    rating: 5,
-    icon: Icons.express,
-  },
-  {
-    name: "Node.js",
-    description:
-      "Run JavaScript on the server side, enabling dynamic and responsive applications.",
-    rating: 5,
-    icon: Icons.nodejs,
-  },
-  {
-    name: "MongoDB",
-    description:
-      "Store and retrieve data seamlessly with a flexible and scalable NoSQL database.",
-    rating: 5,
-    icon: Icons.mongodb,
-  },
-  {
-    name: "Typescript",
-    description:
-      "Enhance JavaScript with static types, making code more understandable and reliable.",
-    rating: 5,
-    icon: Icons.typescript,
-  },
-  {
-    name: "Javascript",
-    description:
-      "Create interactive and dynamic web experiences with the versatile scripting language.",
-    rating: 5,
-    icon: Icons.javascript,
-  },
-  {
-    name: "HTML 5",
-    description:
-      "Structure web content beautifully with the latest version of HyperText Markup Language.",
+      "Understand combustion engines, sensors, actuators, and related control systems.",
     rating: 4,
-    icon: Icons.html5,
+    icon: Icons.engine,
   },
   {
-    name: "CSS 3",
+    name: "CAN Bus & Communication",
     description:
-      "Style web pages creatively with the latest iteration of Cascading Style Sheets.",
+      "Work with automotive communication protocols such as CAN bus and OBD-II.",
     rating: 4,
-    icon: Icons.css3,
+    icon: Icons.network,
   },
   {
-    name: "React Native",
+    name: "Hydraulics & Mechanics",
     description:
-      "Develop cross-platform mobile apps using React for consistent and engaging experiences.",
-    rating: 4,
-    icon: Icons.react,
-  },
-  {
-    name: "Angular",
-    description:
-      "Build dynamic web apps with a TypeScript-based open-source framework by Google.",
+      "Apply knowledge in mechanical and hydraulic systems for diagnostics and repair.",
     rating: 3,
-    icon: Icons.angular,
+    icon: Icons.mechanics,
   },
   {
-    name: "Redux",
+    name: "Workshop Safety",
     description:
-      "Manage app state effectively using a predictable and centralized state container.",
-    rating: 4,
-    icon: Icons.redux,
-  },
-  {
-    name: "Socket.io",
-    description:
-      "Enable real-time, bidirectional communication between clients and servers effortlessly.",
-    rating: 3,
-    icon: Icons.socketio,
-  },
-  {
-    name: "Material UI",
-    description:
-      "Create stunning and responsive UIs with a popular React UI framework.",
-    rating: 4,
-    icon: Icons.mui,
-  },
-
-  {
-    name: "Tailwind CSS",
-    description:
-      "Design beautiful, modern websites faster with a utility-first CSS framework.",
+      "Follow safety standards and procedures in automotive diagnostic workshops.",
     rating: 5,
-    icon: Icons.tailwindcss,
-  },
-  {
-    name: "AWS",
-    description:
-      "Utilize Amazon Web Services to build and deploy scalable, reliable, and secure applications.",
-    rating: 3,
-    icon: Icons.amazonaws,
-  },
-  {
-    name: "Bootstrap",
-    description:
-      "Quickly create responsive and appealing web designs using a popular CSS framework.",
-    rating: 2,
-    icon: Icons.bootstrap,
-  },
-  {
-    name: "MySQL",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 2,
-    icon: Icons.mysql,
-  },
-  {
-    name: "Netlify",
-    description:
-      "Manage and organize relational databases efficiently for data-driven applications.",
-    rating: 4,
-    icon: Icons.netlify,
+    icon: Icons.safety,
   },
 ];
 
