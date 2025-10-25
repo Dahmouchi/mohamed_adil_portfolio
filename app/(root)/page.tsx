@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
@@ -96,46 +97,222 @@ export default function IndexPage() {
             delay={0.4}
             className="text-base font-heading sm:text-xl md:text-xl lg:text-2xl"
           >
-            Automotive Diagnostics Student
+            UM EINEN AUSBILDUNGSPLATZ ALS KFZ-MECHATRONIKER
           </AnimatedText>
           <div className="mt-4 max-w-[42rem] text-center">
             <p className="text-sm leading-normal text-muted-foreground sm:text-base">
-             I&apos;m currently studying Automotive Diagnostics at OFPPT in Morocco, learning how to inspect, identify, and solve car system issues.
+              Motivierter Kfz-Technikbegeisterter mit praktischer Erfahrung in
+              der Fahrzeugdiagnose und Elektronik. Ziel: Ausbildung als
+              Kfz-Mechatroniker in Deutschland, um Fachkenntnisse zu vertiefen
+              und beruflich in der Automobilbranche Fuß zu fassen
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center gap-3 mt-10 sm:flex-row sm:space-x-4">
-            <AnimatedText delay={0.6}>
-              <Link
-                href={"https://github.com"}
-                target="_blank"
-                className={cn(buttonVariants({ size: "lg" }))}
-                aria-label="View Naman Barkiya's GitHub profile"
-              >
-                <Icons.gitHub className="w-4 h-4 mr-2" /> GitHub
-              </Link>
-            </AnimatedText>
-            <AnimatedText delay={0.8}>
-              <Link
-                href={"/contact"}
-                rel="noreferrer"
-                className={cn(
-                  buttonVariants({
-                    variant: "outline",
-                    size: "lg",
-                  })
-                )}
-                aria-label="Contact Naman Barkiya"
-              >
-                <Icons.contact className="w-4 h-4 mr-2" /> Contact
-              </Link>
-            </AnimatedText>
-          </div>
+          <div className="flex flex-col items-center justify-center mt-10">
+  <AnimatedText delay={0.6}>
+    <Link
+      href="/mohamed_adil-resume.pdf" // replace with your actual resume file path
+      target="_blank"
+      download
+      className={cn(buttonVariants({ size: "lg" }))}
+      aria-label="Lebenslauf von Adil Mohamed herunterladen"
+    >
+      <Icons.download className="w-4 h-4 mr-2" /> Lebenslauf herunterladen
+    </Link>
+  </AnimatedText>
+</div>
+
           <AnimatedText delay={1.2}>
             <Icons.chevronDown className="w-6 h-6 mt-10" />
           </AnimatedText>
         </div>
       </section>
+      <AnimatedSection
+  direction="down"
+  className="container py-10 space-y-10 bg-muted my-14"
+  id="education"
+>
+  {/* Title & Subtitle */}
+  <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+    <AnimatedText
+      as="h2"
+      className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+    >
+      Ausbildung & Bildung
+    </AnimatedText>
+    <AnimatedText
+      as="p"
+      delay={0.2}
+      className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+    >
+      Ein Überblick über meinen akademischen Werdegang und meine technische Ausbildung.
+    </AnimatedText>
+  </div>
+
+  {/* Education Cards */}
+  <div className="grid justify-center gap-6 mx-auto md:grid-cols-2 lg:grid-cols-3">
+    {/* Ausbildung */}
+    <div className="p-6 transition-all duration-300 shadow-md bg-background rounded-2xl hover:shadow-lg">
+      <h3 className="mb-2 text-xl font-semibold">
+        Fachtechniker für Fahrzeugdiagnose und eingebettete Elektronik
+      </h3>
+      <p className="mb-1 text-muted-foreground">
+        OFPPT – Centre de Qualification Professionnelle, Beni Mellal
+      </p>
+      <p className="text-sm text-muted-foreground">September 2024 – Aktuell</p>
+    </div>
+
+    {/* Universität */}
+    <div className="p-6 transition-all duration-300 shadow-md bg-background rounded-2xl hover:shadow-lg">
+      <h3 className="mb-2 text-xl font-semibold">
+        Die Fakultät für Wirtschaft und Management
+      </h3>
+      <p className="mb-1 text-muted-foreground">
+        Universität Sultan Moulay Slimane, Beni Mellal
+      </p>
+      <p className="text-sm text-muted-foreground">2021 – 2022</p>
+    </div>
+
+    {/* Abitur */}
+    <div className="p-6 transition-all duration-300 shadow-md bg-background rounded-2xl hover:shadow-lg">
+      <h3 className="mb-2 text-xl font-semibold">
+        Abitur in Empirische Wissenschaften (Zweig: Physik)
+      </h3>
+      <p className="mb-1 text-muted-foreground">Ibnou-El-Aouam-Gymnasium</p>
+      <p className="text-sm text-muted-foreground">2020 – 2021</p>
+    </div>
+  </div>
+</AnimatedSection>
+<AnimatedSection
+  direction="left"
+  className="container py-10 space-y-10 my-14"
+  id="experience"
+>
+  {/* Title & Subtitle */}
+  <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+    <AnimatedText
+      as="h2"
+      className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+    >
+      Weiterbildung & Praxiserfahrung
+    </AnimatedText>
+    <AnimatedText
+      as="p"
+      delay={0.2}
+      className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+    >
+      Eine Übersicht meiner beruflichen Weiterbildungen und praktischen Erfahrungen im Bereich Fahrzeugdiagnose.
+    </AnimatedText>
+  </div>
+
+  {/* Experience Cards */}
+  <div className="grid justify-center gap-6 mx-auto md:grid-cols-2 lg:grid-cols-3">
+    {/* Weiterbildung – Kraftfahrzeugmechatroniker */}
+    <div className="p-6 transition-all duration-300 shadow-md bg-muted rounded-2xl hover:shadow-lg">
+      <div className="flex items-center justify-center w-full p-4 mb-4 bg-white rounded-xl h-44">
+        <img src="/german.png" alt="German Training Center Logo" className="w-auto h-16" />
+      </div>
+      <h3 className="mb-2 text-xl font-semibold">
+        Weiterbildung für Kraftfahrzeugmechatroniker
+      </h3>
+      <p className="mb-1 text-muted-foreground">German Training Center</p>
+      <p className="mb-3 text-sm text-muted-foreground">Januar 2025 – März 2025</p>
+      <p className="text-muted-foreground">
+        Vertiefung praktischer Kenntnisse in der Kfz-Diagnose, Wartung und Elektronik.
+      </p>
+    </div>
+
+    {/* Praktische Ausbildung – Kfz-Diagnose */}
+    <div className="p-6 transition-all duration-300 shadow-md bg-muted rounded-2xl hover:shadow-lg">
+      <div className="flex items-center justify-center w-full p-4 mb-4 bg-white rounded-xl h-44">
+        <img src="/atlantique.png" alt="Atlantik Ausbildungszentrum Logo" className="w-auto h-16" />
+      </div>
+      <h3 className="mb-2 text-xl font-semibold">
+        Praktische Ausbildung in der Kfz-Diagnose
+      </h3>
+      <p className="mb-1 text-muted-foreground">Ausbildungszentrum Atlantik</p>
+      <p className="mb-3 text-sm text-muted-foreground">August 2023 – Februar 2024</p>
+      <p className="text-muted-foreground">
+        Umfassende praktische Erfahrung in Diagnosetechnik und Fehleranalyse von Fahrzeugen.
+      </p>
+    </div>
+  </div>
+
+  {/* 🎥 Video Section */}
+  
+</AnimatedSection>
+
+<AnimatedSection
+  direction="up"
+  className="container py-10 space-y-10 my-14"
+  id="gallery"
+>
+  {/* Title & Subtitle */}
+  <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
+    <AnimatedText
+      as="h2"
+      className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
+    >
+      Galerie
+    </AnimatedText>
+    <AnimatedText
+      as="p"
+      delay={0.2}
+      className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
+    >
+      Einblicke in meine Projekte, Schulungen und praktischen Erfahrungen.
+    </AnimatedText>
+  </div>
+
+  {/* Image Grid */}
+  <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+    {[
+      "/image1.jpg",
+      "/image1.jpg",
+      "/image1.jpg",
+      "/image1.jpg",
+      "/image1.jpg",
+      "/image1.jpg",
+    ].map((src, index) => (
+      <AnimatedSection key={index} delay={0.1 * index} direction="up">
+        <div className="relative overflow-hidden transition-all duration-500 shadow-md rounded-2xl hover:shadow-xl group">
+          <img
+            src={src}
+            alt={`Gallery image ${index + 1}`}
+            className="object-cover w-full h-64 transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 flex items-center justify-center transition-opacity duration-500 opacity-0 bg-black/40 group-hover:opacity-100">
+            
+          </div>
+        </div>
+      </AnimatedSection>
+    ))}
+  </div>
+<div className="flex flex-col items-center justify-center mt-10 space-y-4">
+    <AnimatedText
+      as="h3"
+      delay={0.3}
+      className="text-2xl font-semibold text-center"
+    >
+      Video aus dem Atelier
+    </AnimatedText>
+
+    <div className="w-full max-w-4xl overflow-hidden shadow-lg rounded-2xl">
+       <video  className="w-full h-[60vh] mt-8 rounded-2xl" controls preload="none">
+      <source src="/atelier_mhLZrWic.mp4" type="video/mp4" />
+      <track
+        src="/path/to/captions.vtt"
+        kind="subtitles"
+        srcLang="en"
+        label="English"
+      />
+     Ihr Browser unterstützt das Video-Tag nicht.
+    </video>
+     
+    </div>
+  </div>
+</AnimatedSection>
+
       <AnimatedSection
         className="container py-10 space-y-6 bg-muted"
         id="skills"
@@ -145,7 +322,7 @@ export default function IndexPage() {
             as="h2"
             className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
           >
-            {pagesConfig.skills.title}
+           ERFAHRUNG
           </AnimatedText>
           <AnimatedText
             as="p"
@@ -157,127 +334,16 @@ export default function IndexPage() {
         </div>
         <SkillsCard skills={featuredSkills} />
         <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/skills">
+          <Link href="#">
             <Button variant={"outline"} className="rounded-xl">
               <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
             </Button>
           </Link>
         </AnimatedText>
       </AnimatedSection>
-      <AnimatedSection
-        direction="right"
-        className="container py-10 space-y-6 my-14"
-        id="projects"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.projects.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.projects.description}
-          </AnimatedText>
-        </div>
-        <div className="grid justify-center gap-4 mx-auto md:w-full lg:grid-cols-3">
-          {featuredProjects.map((exp, index) => (
-            <AnimatedSection
-              key={exp.id}
-              delay={0.1 * (index + 1)}
-              direction="up"
-            >
-              <ProjectCard project={exp} />
-            </AnimatedSection>
-          ))}
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/projects">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-        {/* <div className="mx-auto text-center md:max-w-[58rem]">
-                    <p className="leading-normal text-muted-foreground sm:text-lg sm:leading-7">
-                        See all the relevant experiences.
-                    </p>
-                </div> */}
-      </AnimatedSection>
-      <AnimatedSection
-        direction="down"
-        className="container py-10 space-y-6 bg-muted my-14"
-        id="contributions"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.contributions.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.contributions.description}
-          </AnimatedText>
-        </div>
-        <div className="justify-center gap-4 mx-auto md:w-full lg:grid-cols-3">
-          <ContributionCard contributions={featuredContributions} />
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/contributions">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
-      <AnimatedSection
-        direction="left"
-        className="container py-10 space-y-6 my-14"
-        id="experience"
-      >
-        <div className="mx-auto flex max-w-[58rem] flex-col items-center space-y-4 text-center">
-          <AnimatedText
-            as="h2"
-            className="font-heading text-3xl leading-[1.1] sm:text-3xl md:text-6xl"
-          >
-            {pagesConfig.experience.title}
-          </AnimatedText>
-          <AnimatedText
-            as="p"
-            delay={0.2}
-            className="max-w-[85%] leading-normal text-muted-foreground sm:text-lg sm:leading-7"
-          >
-            {pagesConfig.experience.description}
-          </AnimatedText>
-        </div>
-        <div className="grid justify-center gap-4 mx-auto md:w-full lg:grid-cols-3">
-          {experiences.slice(0, 3).map((experience, index) => (
-            <AnimatedSection
-              key={experience.id}
-              delay={0.1 * (index + 1)}
-              direction="up"
-            >
-              <ExperienceCard experience={experience} />
-            </AnimatedSection>
-          ))}
-        </div>
-        <AnimatedText delay={0.4} className="flex justify-center">
-          <Link href="/experience">
-            <Button variant={"outline"} className="rounded-xl">
-              <Icons.chevronDown className="w-4 h-4 mr-2" /> View All
-            </Button>
-          </Link>
-        </AnimatedText>
-      </AnimatedSection>
+     
+      
+      
     </ClientPageWrapper>
   );
 }

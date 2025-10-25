@@ -20,6 +20,7 @@ import {
   MoreVertical,
   Music,
   Palette,
+  Download,
   Phone,
   Pizza,
   Plus,
@@ -86,6 +87,7 @@ export const Icons = {
   mechanics: Activity, // for hydraulics/mechanics (movement)
   safety: ShieldCheck, // for workshop safety
   contact: Phone,
+  download:Download,
   gitRepoIcon: BookMarked,
   gitOrgBuilding: Building,
   gitBranch: IoIosGitBranch,

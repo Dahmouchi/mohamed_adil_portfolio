@@ -53,14 +53,14 @@ export function MainNav({ items, children }: MainNavProps) {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
       >
-        <Link href="/" className="hidden items-center space-x-2 md:flex">
+        <Link href="/" className="items-center hidden space-x-2 md:flex">
           <span className={cn(norican.className, "text-2xl")}>
             {siteConfig.authorName}
           </span>
         </Link>
       </motion.div>
       {items?.length ? (
-        <nav className="hidden gap-6 md:flex items-center">
+        <nav className="items-center hidden gap-6 md:flex">
           {items?.map((item, index) => (
             <motion.div
               key={index}
@@ -89,12 +89,15 @@ export function MainNav({ items, children }: MainNavProps) {
       ) : null}
       <motion.button
         className="flex items-center space-x-2 md:hidden"
-        onClick={() => setShowMobileMenu(!showMobileMenu)}
+       
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        {showMobileMenu ? <Icons.close /> : <Icons.menu />}
-        <span className="font-bold">Menu</span>
+        <Link href="/" className="flex items-center space-x-2">
+          <span className={cn(norican.className, "text-2xl")}>
+            {siteConfig.authorName}
+          </span>
+        </Link>
       </motion.button>
       {showMobileMenu && items && (
         <MobileNav items={items}>{children}</MobileNav>
