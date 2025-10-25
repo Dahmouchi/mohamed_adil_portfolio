@@ -1,15 +1,15 @@
 export const siteConfig = {
-  name: "Mohamed Adil | Developer Portfolio",
+  name: "Mohamed Adil",
   authorName: "Mohamed Adil",
   username: "namanbarkiya",
   description:
-    "Mohamed Adil's portfolio - A modern, responsive Next.js portfolio for developers. This open-source template can be customized to showcase your own skills, projects, and professional experience.",
-  url: "https://nbarkiya.xyz",
+    "Mohamed Adil's portfolio - A modern, responsive portfolio . skills, projects, and professional experience.",
+  url: "",
   links: {
-    twitter: "https://x.com/namanbarkiya",
-    github: "https://github.com/namanbarkiya",
+    twitter: "",
+    github: "",
   },
-  ogImage: "https://nbarkiya.xyz/profile-img.jpg",
+  ogImage: "https://mohamed-adil-portfolio.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fprofile-img.3b2ab71e.jpg&w=1920&q=75",
   iconIco:
     "https://res.cloudinary.com/dbfvcn3f6/image/upload/v1692357384/assets/naman-favicon.ico",
   logoIcon:
