@@ -18,7 +18,7 @@ export const pagesConfig: PagesConfig = {
     description:
       "Welcome to my portfolio — I am a student in Automotive Diagnostics and Embedded Electronics at OFPPT, Morocco.",
     metadata: {
-      title: "Home | Portfolio",
+      title: "Mohamed Adil | Automotive Diagnostics Student",
       description:
         "Portfolio of an Automotive Diagnostics and Embedded Electronics student at OFPPT, Morocco.",
     },
