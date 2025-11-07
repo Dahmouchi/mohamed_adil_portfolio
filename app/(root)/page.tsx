@@ -69,7 +69,7 @@ export default function IndexPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
       />
 
-      <section className="flex items-center h-screen pt-6 pb-8 mb-0 space-y-6 md:pb-12 md:py-20 lg:py-32">
+      <section className="flex items-center pt-6 pb-8 mt-20 mb-0 space-y-6 lg:mt-0 lg:h-screen md:pb-12 md:py-20 lg:py-32">
         <div className="container flex max-w-[64rem] flex-col items-center gap-4 text-center -mt-20">
           <Image
             src={profileImg}
@@ -125,7 +125,7 @@ export default function IndexPage() {
       </section>
       <AnimatedSection
         direction="down"
-        className="container py-10 space-y-10 bg-muted my-14"
+        className="container py-10 space-y-10 bg-muted"
         id="education"
       >
         {/* Title & Subtitle */}
